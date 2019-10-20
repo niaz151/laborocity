@@ -1,8 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
 import './styles/App.css';
+import Header from './components/Header';
 import Tabs from './components/Tabs';
+import Hero from './components/Hero';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Header/>
       <div className='app-body'>
         <Tabs/>
-        <img src={require('./images/person.svg')} />
+        <Hero/>
       </div>
     </div>
   );

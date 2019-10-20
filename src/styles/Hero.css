@@ -1,0 +1,13 @@
+.hero-container{
+  height: 45vh;
+
+}
+
+.hero-text-container{
+  font-family: 'Neuton';
+  font-weight:bold;
+  font-size: calc(13px + 0.8vw);
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: 0.21px;
+}
