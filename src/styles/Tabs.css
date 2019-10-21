@@ -1,5 +1,7 @@
 .tab-container{
   height:50px;
+  width: 100%;
+  max-width: 1400px;
   border-bottom:2px solid #E0E0E0;
 }
 

@@ -4,14 +4,16 @@ import './styles/App.css';
 import Header from './Header';
 import Tabs from './Tabs';
 import Hero from './Hero';
+import Sliders from './Sliders';
 
 function App() {
   return (
     <div className='app-container'>
       <Header/>
-      <div className='app-body'>
+      <div className='d-flex flex-column align-items-center app-body'>
         <Tabs/>
         <Hero/>
+        <Sliders/>
       </div>
     </div>
   );

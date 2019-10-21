@@ -7,6 +7,5 @@ var initial_state = [{
 }]
 
 export default (state = initial_state, action) => {
-  console.log(state)
   return state
 }
