@@ -1,0 +1,20 @@
+.category-form-container{
+ width: 90%;
+ height: calc(60vh - 40px); 
+}
+
+.category-form-row{
+  background-color:white;
+  height:50px;
+  width: 100%;
+  font-family:Montserrat;
+  font-weight:500;
+}
+
+.category-form-label{
+  left:0;
+}
+
+.category-form-switch{
+  right:0;
+}

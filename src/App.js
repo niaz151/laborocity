@@ -4,7 +4,8 @@ import './styles/App.css';
 import Header from './Header';
 import Tabs from './Tabs';
 import Hero from './Hero';
-import Sliders from './Sliders';
+import CategoryForm from './CategoryForm';
+
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <div className='d-flex flex-column align-items-center app-body'>
         <Tabs/>
         <Hero/>
-        <Sliders/>
+        <CategoryForm/>
       </div>
     </div>
   );
