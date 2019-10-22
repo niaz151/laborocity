@@ -5,6 +5,7 @@ class Tab extends React.Component{
 
   render(){
 
+    /* IF ACTIVE TAB  */
     if(this.props.active){
       return(
         <Link 

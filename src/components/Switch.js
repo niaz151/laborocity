@@ -8,6 +8,7 @@ class Switch extends React.Component {
 
     return(
       <label className='switch mr-4'>
+        {/* NEGATE(SWITCH) FORM VALUE WITH ! */}
         <input type='checkbox' value={this.props.value} onClick={ () => onChange(!value)} />
         <span className='slider'></span>
       </label>

@@ -7,7 +7,8 @@ import EquipmentForm from './components/EquipmentForm';
 
 class Equipment extends React.Component{
   
-  checkSkills(){
+  /* CHECK FOR SKILLS WITHIN THE STORE */
+  hasSkills(){
     var user_data = this.props.user_data.user
     var skills = user_data.skills
     var bool = null
@@ -17,6 +18,7 @@ class Equipment extends React.Component{
     return bool
   }
 
+  /* ERROR MSG IF NO SKILLS WITHIN STORE */
   noSkillsWarning = () => (
     <div className='d-flex flex-column align-items-center justify-content-center error-container'>
       <div className='d-flex align-items-center justify-content-center mt-4 error-msg'>
@@ -33,7 +35,7 @@ class Equipment extends React.Component{
 
   render(){
 
-    if(this.checkSkills()){
+    if(this.hasSkills()){
       return(
         <>
         <Header/>
@@ -66,6 +68,7 @@ class Equipment extends React.Component{
   }
 }
 
+/* CONNECT THIS COMPONENT TO THE STORE/STATE VIA PROPS */
 function mapStateToProps(state){
   var user_data = state.user
   return({
