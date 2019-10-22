@@ -48,7 +48,6 @@ function mapStateToProps(state){
   })
 }
 
-
 export default connect(mapStateToProps,null)(reduxForm({
   form:'category-form'
 })(EquipmentForm))
