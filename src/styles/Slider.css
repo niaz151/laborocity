@@ -1,0 +1,10 @@
+.slidecontainer {
+ height:auto;
+ width: 50%;
+ border:1px solid black;
+}
+
+.slidecontainer input{
+  width:100%;
+}
+
