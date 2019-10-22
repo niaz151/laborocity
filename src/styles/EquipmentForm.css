@@ -1,12 +1,12 @@
 .equipment-form-container{
   position: absolute;
-  height:375px;
+  height:300px;
   width: 90%;
   top: 164px;
 }
 
 .equipment-form-row{
-  flex:1;
+  height:60px;
   width: 100%;
 }
 
