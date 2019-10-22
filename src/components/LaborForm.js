@@ -1,7 +1,7 @@
 import React from 'react';
 import {reduxForm, Field} from 'redux-form';
 import {connect} from 'react-redux';
-import Switch from './components/Switch';
+import Switch from './Switch';
 
 
 class LaborForm extends React.Component{

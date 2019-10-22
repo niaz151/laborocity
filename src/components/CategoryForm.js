@@ -1,8 +1,8 @@
 import React from 'react';
 import {reduxForm, Field} from 'redux-form';
 import {connect} from 'react-redux';
-import Switch from './components/Switch';
-import './styles/CategoryForm.css';
+import Switch from './Switch';
+import '../styles/CategoryForm.css';
 
 
 class CategoryForm extends React.Component{

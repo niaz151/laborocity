@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles/Tabs.css';
-import NavTab from './components/NavTab';
+import '../styles/Tabs.css';
+import NavTab from './NavTab';
 
 const Tabs = () => {
   return(
