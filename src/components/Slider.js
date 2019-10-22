@@ -10,7 +10,7 @@ class Slider extends React.Component{
 
     return(
       <label className="slidecontainer">
-        <input type="range" className="custom-range" min="0" max="10" value='0' onClick={ () => onChange(value)} />
+        <input type="range" className="custom-range"  onClick={ () => onChange(value)} />
       </label>
     )
   }

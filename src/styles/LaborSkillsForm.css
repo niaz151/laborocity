@@ -1,26 +1,22 @@
 .labor-form-container{
-  position: absolute;
-  height:300px;
-  width: 85%;
-  top: 164px;
+  height:160px;
+  width: 100%;
+  margin-top:2px;
 }
 
 .labor-form-row{
-  height: 100px;
+  height: 50px;
   width: 100%;
+  background-color:white;
 }
 
-.labor-form-top-container{
-  margin-top:-25px;
-  height:50px;
-  width:100%;
-}
 
 .labor-form-label{
   font-family: Montserrat;
   font-weight:bold;
   font-size:12px;
-  color: #001C47
+  color: #001C47;
+  margin-left:40px;
 }
 
 .labor-form-val{
@@ -29,6 +25,7 @@
   font-weight:bold;
   font-size:11px;
   color: #787878;
+  margin-right:40px;
 }
 
 .labor-form-bottom-container{

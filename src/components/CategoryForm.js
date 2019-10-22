@@ -2,8 +2,7 @@ import React from 'react';
 import {reduxForm, Field} from 'redux-form';
 import Switch from './Switch';
 import '../styles/CategoryForm.css';
-
-
+import LaborSkillsForm from './LaborSkillsForm';
 class CategoryForm extends React.Component{
 
   
@@ -28,6 +27,8 @@ class CategoryForm extends React.Component{
           <label className='position-absolute ml-4 category-form-label'> General Labor </label>
           <Field name='general_labor' component={Switch} />
         </div>
+
+        <LaborSkillsForm/>
 
         <div className='position-relative d-flex align-items-center category-form-row mt-3'>
           <label className='position-absolute ml-4 category-form-label'> Office </label>
