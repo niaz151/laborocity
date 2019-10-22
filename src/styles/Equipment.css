@@ -5,10 +5,34 @@
   top:163px;
 }
 
-.error_msg{
+.error-msg{
   font-size:18px;
   font-family: Neuton;
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.211765px;
+}
+
+.equipment-container{
+  position: relative;
+}
+
+
+
+.success-msg{
+  text-align: center;
+  height: 50px;
+  top: 34px;
+  font-family: Neuton;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.equipment-category{
+  height:50px;
+  width: 90%;
+  top:114px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size:14px;
 }

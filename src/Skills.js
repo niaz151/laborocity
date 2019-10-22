@@ -3,6 +3,7 @@ import Header from './components/Header';
 import NavTabs from './components/NavTabs';
 import Hero from './components/Hero';
 import CategoryForm from './components/CategoryForm';
+import './styles/Skills.css'
 
 const Skills = () => {
   return(

@@ -3,12 +3,12 @@ import Header from './components/Header';
 import NavTabs from './components/NavTabs';
 import {connect} from 'react-redux';
 import './styles/Equipment.css';
-
+import EquipmentForm from './components/EquipmentForm';
 
 class Equipment extends React.Component{
   
   checkSkills(){
-    var user_data = this.props.user_data
+    var user_data = this.props.user_data.user
     var skills = user_data.skills
     var bool = null
 
@@ -19,11 +19,11 @@ class Equipment extends React.Component{
 
   noSkillsWarning = () => (
     <div className='d-flex flex-column align-items-center justify-content-center error-container'>
-      <div className='d-flex align-items-center justify-content-center mt-4 error_msg error_msg_one'>
+      <div className='d-flex align-items-center justify-content-center mt-4 error-msg'>
         You currently have on skills <br/>
         to add equipment under.
       </div>
-      <div className='d-flex align-items-center justify-content-center mt-4 error_msg error_msg_two'>
+      <div className='d-flex align-items-center justify-content-center mt-4 error-msg'>
         Please go back to the Skills tab <br/>
         to add some of your skills <br/>
         and interests
@@ -38,7 +38,7 @@ class Equipment extends React.Component{
         <>
         <Header/>
         <NavTabs active='equipment' />
-        <div className='d-flex flex-column align-items-center equipment-background'>
+        <div className='d-flex flex-column align-items-center equipment-container'>
           {this.noSkillsWarning()}
         </div>
         </>
@@ -50,13 +50,19 @@ class Equipment extends React.Component{
         <>
         <Header/>
         <NavTabs active='equipment' />
-        <div className='d-flex flex-column align-items-center equipment-background'>
-          test
+        <div className='position-relative d-flex flex-column align-items-center equipment-container'>
+          <div className='position-absolute success-msg'>
+            Do you have the following equipment <br/>
+            for your selections?
+          </div>
+          <div className='d-flex align-items-center pl-4 position-absolute equipment-category'>
+            General Labor Items
+          </div>
+          <EquipmentForm/>
         </div>
         </>
       )
     }
-    
   }
 }
 

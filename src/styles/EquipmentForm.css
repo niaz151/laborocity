@@ -1,0 +1,23 @@
+.equipment-form-container{
+  position: absolute;
+  height:375px;
+  width: 90%;
+  top: 164px;
+}
+
+.equipment-form-row{
+  flex:1;
+  width: 100%;
+}
+
+.equipment-form-row-alt{
+  background-color: #F5F5F5;
+}
+
+.equipment-form-label{
+  left:0;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  color:#787878;
+}
