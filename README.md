@@ -26,3 +26,5 @@
  1. I was succesfully able to link the reduxForm into the store and update form values in real time 
  
  2. Subsequently, I was able to use the aforementioned store updates to verify if a user has 'skills' and can access the alternate             equipment page 
+   
+ 3. The application is currently being hosted on laborocity-sample.surge.sh (this is using the program I brought up during the interview)
