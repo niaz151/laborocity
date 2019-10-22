@@ -1,9 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-
-
-class NavTab extends React.Component{
+class Tab extends React.Component{
 
   render(){
     return(
@@ -14,4 +12,4 @@ class NavTab extends React.Component{
   }
 }
 
-export default NavTab
+export default Tab

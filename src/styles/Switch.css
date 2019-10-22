@@ -39,6 +39,7 @@
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
+  margin-top:-3px;
 }
 
 input:checked + .slider {
