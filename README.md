@@ -7,7 +7,7 @@
    As this was my first time using ReduxForm I had trouble trying to utilize a range slider in combination with the ReduxForm methods and    way of data transfer
    
    
- 2. Switch Div Width Not Pixel-Matching the 345pm on Figma
+ 2. Switch Div Width Not Pixel-Matching the 345px on Figma
     
     Explanation: 
     
@@ -28,3 +28,8 @@
  2. Subsequently, I was able to use the aforementioned store updates to verify if a user has 'skills' and can access the alternate             equipment page 
    
  3. The application is currently being hosted on laborocity-sample.surge.sh (this is using the program I brought up during the interview)
+
+
+### What's Left To Do? ###
+
+1. Make the Labor submenu show/hide depending on the value of the category slider 
