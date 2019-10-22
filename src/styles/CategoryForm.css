@@ -5,13 +5,14 @@
 
 .category-form-row{
   background-color:white;
-  height:50px;
+  height:47px;
   width: 100%;
   font-family:Montserrat;
   font-weight:500;
 }
 
 .category-form-label{
+  font-size:14px;
   left:0;
 }
 

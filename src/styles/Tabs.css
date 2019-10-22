@@ -1,7 +1,6 @@
 .tab-container{
   height:50px;
   width: 100%;
-  max-width: 1400px;
   border-bottom:2px solid #E0E0E0;
 }
 
@@ -11,6 +10,6 @@
   font-weight:500;
   flex:1;
   letter-spacing: 0.17px;
-  font-size: calc(10px + 0.5vw);
+  font-size: 14px;
   color: #8B8B8B
 }

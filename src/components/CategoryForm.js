@@ -8,29 +8,29 @@ import '../styles/CategoryForm.css';
 class CategoryForm extends React.Component{
 
   handleChange = () => {
-    alert('hi')
+  
   }
 
   render(){
     return(
-      <form className='d-flex flex-column align-items-center justify-content-center category-form-container' onChange={this.handleChange}>
-        <div className='position-relative d-flex align-items-center category-form-row mt-4'>
+      <form className='d-flex flex-column align-items-start justify-content-start category-form-container' onChange={this.handleChange}>
+        <div className='position-relative d-flex align-items-center category-form-row mt-3'>
           <label className='position-absolute ml-4 category-form-label'> Warehouse </label>
           <Field name='warehouse' component={Switch} />
         </div>
-        <div className='position-relative d-flex align-items-center category-form-row mt-4'>
+        <div className='position-relative d-flex align-items-center category-form-row mt-3'>
           <label className='position-absolute ml-4 category-form-label'> Hospitality </label>
           <Field name='hospitality' component={Switch} />
         </div>
-        <div className='position-relative d-flex align-items-center category-form-row mt-4'>
+        <div className='position-relative d-flex align-items-center category-form-row mt-3'>
           <label className='position-absolute ml-4 category-form-label'> General Labor </label>
           <Field name='general_labor' component={Switch} />
         </div>
-        <div className='position-relative d-flex align-items-center category-form-row mt-4'>
+        <div className='position-relative d-flex align-items-center category-form-row mt-3'>
           <label className='position-absolute ml-4 category-form-label'> Office </label>
           <Field name='office' component={Switch} />
         </div>
-        <div className='position-relative d-flex align-items-center category-form-row mt-4'>
+        <div className='position-relative d-flex align-items-center category-form-row mt-3'>
           <label className='position-absolute ml-4 category-form-label'> iRelaunch </label>
           <Field name='irelaunch' component={Switch} />
         </div>
