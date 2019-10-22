@@ -11,14 +11,14 @@
     
     Explanation: 
     
-    Since the majority of the time I would be viewing this on desktop and it needs to be respnsive I just chose to make it a much more         reasonale width while being used through a larger screen
+    Since the majority of the time I would be viewing this on desktop and it needs to be responsive I just chose to make it a much more         reasonable width while being used through a larger screen
     
  
  ### Potential Issues with Figma Design ###
  
  1. In the General Labor submenu the item 'Restoration' is repeated twice
  
- 2. After succcesfully picking a skill and reaching the alternate equipment screen, the word 'equipment' is mispelled
+ 2. After succcesfully picking a skill and reaching the alternate equipment screen, the word 'equipment' is misspelled
 
 
 ### Features ###
