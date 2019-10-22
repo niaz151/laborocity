@@ -19,3 +19,10 @@
  1. In the General Labor submenu the item 'Restoration' is repeated twice
  
  2. After succcesfully picking a skill and reaching the alternate equipment screen, the word 'equipment' is mispelled
+
+
+### Features ###
+
+ 1. I was succesfully able to link the reduxForm into the store and update form values in real time 
+ 
+ 2. Subsequently, I was able to use the aforementioned store updates to verify if a user has 'skills' and can access the alternate             equipment page 
