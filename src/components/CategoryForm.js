@@ -5,49 +5,39 @@ import Switch from './Switch';
 import '../styles/CategoryForm.css';
 
 
+const handleSwitch = () => {
 
+}
 
-const customSwitch = () => (
-  <Switch/>
-)
+class CategoryForm extends React.Component{
 
-const CategoryForm = (props) => {
-
-  return(
-    <form className='d-flex flex-column align-items-start justify-content-start category-form-container' onChange={onChange}>
-      <div className='position-relative d-flex align-items-center category-form-row mt-3'>
-        <label className='position-absolute ml-4 category-form-label'> Warehouse </label>
-        <Field name='warehouse' value={false} component={(customSwitch)} />
+  render(){
+    return(
+      <div className='d-flex flex-column align-items-start justify-content-start category-form-container'>
+        <div className='position-relative d-flex align-items-center category-form-row mt-3'>
+          <div className='position-absolute ml-4 category-form-label'> Warehouse </div>
+          <Switch category='warehouse'/>
+        </div>
+        <div className='position-relative d-flex align-items-center category-form-row mt-3'>
+          <div className='position-absolute ml-4 category-form-label'> Hospitality </div>
+          <Switch category='hospitality'/>
+        </div>
+        <div className='position-relative d-flex align-items-center category-form-row mt-3'>
+          <div className='position-absolute ml-4 category-form-label'> General Labor </div>
+          <Switch category='general_labor'/>
+        </div>
+        <div className='position-relative d-flex align-items-center category-form-row mt-3'>
+          <div className='position-absolute ml-4 category-form-label'> Office </div>
+          <Switch category='office'/>
+        </div>
+        <div className='position-relative d-flex align-items-center category-form-row mt-3'>
+          <div className='position-absolute ml-4 category-form-label'> iRelaunch </div>
+          <Switch category='iRelaunch'/>
+        </div>
       </div>
-      <div className='position-relative d-flex align-items-center category-form-row mt-3'>
-        <label className='position-absolute ml-4 category-form-label'> Hospitality </label>
-        <Field name='hospitality' defaultValue={false} component={customSwitch} />
-      </div>
-      <div className='position-relative d-flex align-items-center category-form-row mt-3'>
-        <label className='position-absolute ml-4 category-form-label'> General Labor </label>
-        <Field name='general_labor' defaultValue={false} component={customSwitch} />
-      </div>
-      <div className='position-relative d-flex align-items-center category-form-row mt-3'>
-        <label className='position-absolute ml-4 category-form-label'> Office </label>
-        <Field name='office' defaultValue={false} component={customSwitch} />
-      </div>
-      <div className='position-relative d-flex align-items-center category-form-row mt-3'>
-        <label className='position-absolute ml-4 category-form-label'> iRelaunch </label>
-        <Field name='irelaunch' value={false} component={customSwitch} />
-      </div>
-    </form>
-  )  
+    )     
+  }
 } 
 
 
-function mapStateToProps(state){
-  var form = state.form
-  return({
-    form:'category-form'
-  })
-}
-
-
-export default connect(mapStateToProps,null)(reduxForm({
-  form:'category-form'
-})(CategoryForm))
+export default CategoryForm
