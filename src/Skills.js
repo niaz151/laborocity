@@ -7,8 +7,8 @@ import CategoryForm from './components/CategoryForm';
 const Skills = () => {
   return(
     <>
-      <Header/>
-      <NavTabs/>
+      <Header />
+      <NavTabs  active='skills'/>
       <div className='d-flex flex-column align-items-center skills-background'>
         <Hero/>
         <CategoryForm/>

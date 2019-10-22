@@ -8,7 +8,7 @@ const Equipment = () => {
   return(
     <>
       <Header/>
-      <NavTabs/>
+      <NavTabs active='equipment' />
       <div className='d-flex flex-column align-items-center equipment-background'>
    
       </div>

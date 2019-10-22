@@ -7,7 +7,7 @@
   position: absolute;
   right:0;
   width: 110px;
-  height: 25px;
+  height: 26px;
   border-radius:2px;
 }
 
@@ -39,7 +39,7 @@
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
-  margin-top:-3px;
+  margin-top:-2px;
 }
 
 input:checked + .slider {

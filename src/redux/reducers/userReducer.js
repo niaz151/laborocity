@@ -1,9 +1,19 @@
 var initial_state = [{
-  'warehouse': false,
-  'hospitality': false,
-  'general_labor': false,
-  'office': false,
-  'iRelaunch': false
+  'warehouse': {
+
+  },
+  'hospitality': {
+    
+  },
+  'general_labor': {
+    
+  },
+  'office': {
+    
+  },
+  'iRelaunch': {
+    
+  }
 }]
 
 export default (state = initial_state, action) => {
