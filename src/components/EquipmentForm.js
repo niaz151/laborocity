@@ -7,8 +7,11 @@ import '../styles/EquipmentForm.css';
 class EquipmentForm extends React.Component{
 
   render(){
+
+    const {handleSubmit} = this.props
+
     return(
-      <form className='d-flex flex-column align-items-center justify-content-around equipment-form-container'>
+      <form className='d-flex flex-column align-items-center justify-content-around equipment-form-container' onSubmit={handleSubmit}>
         
         <div className='d-flex align-items-center equipment-form-row  equipment-form-row-alt'>
           <label className='position-absolute ml-4 equipment-form-label '> Steel Toed Boots</label>
@@ -49,5 +52,8 @@ function mapStateToProps(state){
 }
 
 export default connect(mapStateToProps,null)(reduxForm({
-  form:'category-form'
+  form:'equipment-form',
+  updateUnregisteredFields: true,
+  destroyOnUnmount: false,
+  keepDirtyOnReinitialize: true,
 })(EquipmentForm))
