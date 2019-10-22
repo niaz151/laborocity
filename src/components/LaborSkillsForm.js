@@ -15,14 +15,33 @@ class LaborSkillsForm extends React.Component{
         
         <div className='d-flex flex-row align-items-center justify-content-center labor-form-row'>
           <div className='d-flex align-items-center position-absolute labor-form-top-container'>
-            <div className='position-absolute labor-form-label ml-4 '> Steel Toed Boots</div>
-            <div className='position-absolute labor-form-val mr-4'> My Experience </div>
+            <div className='position-absolute labor-form-label ml-4 '> Construction</div>
+            <div className='position-absolute labor-form-val mr-4'> My Experience:  </div>
           </div>
           <div className='d-flex align-items-center justify-content-center labor-form-bottom-container'>
-            <Field name='steel_toed_boots' component={Slider} />     
+            <Field name='construction' component={Slider} />     
           </div>
         </div>
 
+        <div className='d-flex flex-row align-items-center justify-content-center labor-form-row'>
+          <div className='d-flex align-items-center position-absolute labor-form-top-container'>
+            <div className='position-absolute labor-form-label ml-4 '> Restoration</div>
+            <div className='position-absolute labor-form-val mr-4'> My Experience:  </div>
+          </div>
+          <div className='d-flex align-items-center justify-content-center labor-form-bottom-container'>
+            <Field name='restoration' component={Slider} />     
+          </div>
+        </div>
+
+        <div className='d-flex flex-row align-items-center justify-content-center labor-form-row'>
+          <div className='d-flex align-items-center position-absolute labor-form-top-container'>
+            <div className='position-absolute labor-form-label ml-4 '> Painting</div>
+            <div className='position-absolute labor-form-val mr-4'> My Experience:  </div>
+          </div>
+          <div className='d-flex align-items-center justify-content-center labor-form-bottom-container'>
+            <Field name='painting' component={Slider} />     
+          </div>
+        </div>
  
 
       </form>

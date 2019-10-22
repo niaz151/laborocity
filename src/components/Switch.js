@@ -5,7 +5,7 @@ class Switch extends React.Component {
   render(){
 
     const {input: {value,onChange}} = this.props
-
+ 
     return(
       <label className='switch mr-4'>
         {/* NEGATE(SWITCH) FORM VALUE WITH ! */}

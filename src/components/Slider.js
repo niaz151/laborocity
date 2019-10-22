@@ -7,10 +7,11 @@ class Slider extends React.Component{
 
     const {input: {value,onChange}} = this.props
 
+
     return(
-      <div className="slidecontainer">
-        <input type="range" min="1" max="100" className='custom-range'/>
-      </div>
+      <label className="slidecontainer">
+        <input type="range" className="custom-range" min="0" max="10" value='0' onClick={ () => onChange(value)} />
+      </label>
     )
   }
 }
