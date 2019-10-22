@@ -1,15 +1,17 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.css';
 import Header from './Header';
 import Tabs from './Tabs';
 import Hero from './Hero';
 import CategoryForm from './CategoryForm';
+import {Router,Route,Switch, Bro} from 'react-router-dom';
+import {createBrowserHistory} from 'history';
 
 
-function App() {
-  return (
-    <div className='app-container'>
+const Skills = () => {
+  return(
+    <div classname='app-container'>
       <Header/>
       <div className='d-flex flex-column align-items-center app-body'>
         <Tabs/>
@@ -17,6 +19,34 @@ function App() {
         <CategoryForm/>
       </div>
     </div>
+  )
+}
+
+const Equipment = () => {
+  return(
+    <div className='app-container'>
+      <Header/>
+    </div>
+  )
+}
+
+const Certification = () => {
+  return(
+    <div className='app-container'>
+      <Header/>
+    </div>
+  )
+}
+
+function App() {
+  return (
+    <Router history={createBrowserHistory()}>
+      <Switch>
+        <Route exact path="/" component={Skills}/>
+        <Route path="/equipment" component={Equipment} />
+        <Route path="/certifications" component={Certification} />
+      </Switch>
+    </Router>
   );
 }
 
