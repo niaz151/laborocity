@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
-import userReducer from './redux/reducers/userReducer';
+import rootReducer from './redux/reducers/rootReducer';
 
 const store = createStore(
-  userReducer,
+  rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 

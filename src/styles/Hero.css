@@ -1,10 +1,8 @@
-.hero-container{
-  height: 40vh;
-}
-
 .person-icon{
   height:160px;
   width:160px;
+  position: absolute;
+  top:134px;
 }
 
 .hero-text-container{
@@ -16,4 +14,6 @@
   line-height: 140%;
   font-style: normal;
   letter-spacing: 0.21px;
+  position: absolute;
+  top: 303px;
 }

@@ -1,0 +1,14 @@
+.error-container{
+  width: 250px;
+  height: 152px;
+  position: absolute;
+  top:163px;
+}
+
+.error_msg{
+  font-size:18px;
+  font-family: Neuton;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.211765px;
+}

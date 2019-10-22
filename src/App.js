@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.css';
-import CategoryForm from './components/CategoryForm';
 import {Router,Route,Switch} from 'react-router-dom';
 import {createBrowserHistory} from 'history';
 import Skills from './Skills';

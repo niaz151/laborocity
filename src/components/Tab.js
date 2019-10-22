@@ -1,8 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Skills from '../Skills';
-import Equipment from '../Equipment';
-import Certifications from '../Certifications';
 
 class Tab extends React.Component{
 

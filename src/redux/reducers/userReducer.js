@@ -1,20 +1,11 @@
-var initial_state = [{
-  'warehouse': {
+var initial_state = {
+  skills:{
+  
+  },
+  equipment:{
 
-  },
-  'hospitality': {
-    
-  },
-  'general_labor': {
-    
-  },
-  'office': {
-    
-  },
-  'iRelaunch': {
-    
   }
-}]
+}
 
 export default (state = initial_state, action) => {
   return state

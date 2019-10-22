@@ -1,6 +1,8 @@
 .category-form-container{
- width: 90%;
- height: calc(60vh - 40px); 
+ width: 85%;
+ height: auto; 
+ position: absolute;
+ top: 373px;
 }
 
 .category-form-row{
