@@ -11,7 +11,7 @@ class LaborSkillsForm extends React.Component{
     const {handleSubmit} = this.props
 
     return(
-      <form className='d-flex flex-column align-items-center justify-content-around labor-form-container' onSubmit={handleSubmit}>
+      <div className='d-flex flex-column align-items-center justify-content-around labor-form-container' onSubmit={handleSubmit}>
         
         <div className='d-flex align-items-center labor-form-row '>
           <label className='position-absolute labor-form-label'> Construction </label>
@@ -27,9 +27,8 @@ class LaborSkillsForm extends React.Component{
           <label className='position-absolute labor-form-label'> Painting </label>
           <Field name='painting' component={Switch} />
         </div>
-
         
-      </form>
+      </div>
     )  
   } 
 }

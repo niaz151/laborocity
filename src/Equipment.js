@@ -6,22 +6,32 @@ import './styles/Equipment.css';
 import EquipmentForm from './components/EquipmentForm';
 
 class Equipment extends React.Component{
-  
-  /* CHECK FOR SKILLS WITHIN THE STORE */
-  hasSkills(){
-    var skills = this.props.skill_data
-    var bool = null
 
-    // IF SKILLS OBJECT IS EMPTY / ELSE
-    Object.keys(skills).length === 0 ? bool = true : bool = false
-    return bool
+
+  hasSkills(){
+    var form = this.props.form
+
+    /* USER NEEDS TO VISIT SKILLS PAGE */
+    if(Object.keys(form).length < 2){
+      return false
+    }
+
+    /* USER NEEDS TO SELECT A SKILL */
+    if(Object.keys(form['labor-form']).length < 2){
+      return false
+    }
+    
+    /* USER HAS SELECTED A SKILL */
+    else{
+      return true
+    }
   }
 
   /* ERROR MSG IF NO SKILLS WITHIN STORE */
   noSkillsWarning = () => (
     <div className='d-flex flex-column align-items-center justify-content-center error-container'>
       <div className='d-flex align-items-center justify-content-center mt-4 error-msg'>
-        You currently have on skills <br/>
+        You currently have no skills <br/>
         to add equipment under.
       </div>
       <div className='d-flex align-items-center justify-content-center mt-4 error-msg'>
@@ -34,7 +44,7 @@ class Equipment extends React.Component{
 
   render(){
 
-    if(this.hasSkills()){
+    if(this.hasSkills() === false){
       return(
         <>
         <Header/>
@@ -49,7 +59,7 @@ class Equipment extends React.Component{
     else{
 
       /* EXTRACT CATEGORY NAME FROM STORE */
-      var category_name = Object.keys(this.props.skill_data)[0]
+      var category_name = 'General Labor'
 
       return(
         <>
@@ -78,9 +88,9 @@ class Equipment extends React.Component{
 
 /* CONNECT THIS COMPONENT TO THE STORE/STATE VIA PROPS */
 function mapStateToProps(state){
-  var skill_data = state.skills
+  var form= state.form
   return({
-    skill_data:skill_data
+    form:form
   })
 }
 

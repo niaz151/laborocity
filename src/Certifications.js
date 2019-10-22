@@ -9,7 +9,7 @@ const Certifications = () => {
       <Header />
       <NavTabs active='certifications' />
       <div className='d-flex flex-column align-items-center certifications-background'> 
-        <LaborSkillsForm/>
+
       </div>
     </>
   )

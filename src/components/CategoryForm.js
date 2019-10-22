@@ -2,10 +2,11 @@ import React from 'react';
 import {reduxForm, Field} from 'redux-form';
 import Switch from './Switch';
 import '../styles/CategoryForm.css';
+import '../styles/LaborSkillsForm.css';
 import LaborSkillsForm from './LaborSkillsForm';
 class CategoryForm extends React.Component{
 
-  
+
   render(){
     
     const {handleSubmit} = this.props
