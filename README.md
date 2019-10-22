@@ -1,4 +1,4 @@
-### Noticable Differences: ###
+### Noticeable Differences: ###
 
 1. Dropdown Menu is composed of switches instead of sliders
    
