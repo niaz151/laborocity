@@ -1,11 +1,18 @@
 import React from 'react';
 import '../styles/Switch.css';
 
-const Switch = () => (
-  <label className='switch mr-4'>
-    <input type='checkbox' />
-    <span className='slider'></span>
-  </label>
-)
+class Switch extends React.Component {
+  render(){
+
+    const {input: {value,onChange}} = this.props
+
+    return(
+      <label className='switch mr-4'>
+        <input type='checkbox' value={this.props.value} onClick={ () => onChange(!value)} />
+        <span className='slider'></span>
+      </label>
+    )
+  }
+}
 
 export default Switch;
