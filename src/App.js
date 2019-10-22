@@ -14,6 +14,7 @@ function App() {
     <Router history={createBrowserHistory()}>
       <Switch>
         <Route exact path="/" component={Skills}/>
+        <Route path="/skills" component={Skills}/>
         <Route path="/equipment" component={Equipment} />
         <Route path="/certifications" component={Certifications} />
       </Switch>

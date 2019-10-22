@@ -7,7 +7,7 @@ const NavTabs = () => {
     <div className='d-flex align-items-center justify-content-center tab-container'>
       <Tab name='Skills'/>
       <Tab name='Equipment' />
-      <Tab name='Certification' />
+      <Tab name='Certifications' />
     </div>
   )
 }
